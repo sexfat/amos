@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <title>animation</title>
+    <style>
+        body {
+           padding: 0;
+           margin: 0;
+           background-color: #fd3e3e;
+
+        }
+         .animation {
+            background-color: #000;
+            width: 100vw;
+            height: 100vh;
+
+         }
+
+
+    </style>
+</head>
+<body>
+    <div class="animation">
+
+
+
+    </div>
+
+      <script>
+         gsap.to('.animation' , {
+           opacity : 0,
+           duration : 10,
+           delay: 4  
+         })
+
+      </script>
+</body>
+</html>

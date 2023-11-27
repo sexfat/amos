@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .card-list {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card-item {
+            box-sizing: border-box;
+            width: 280px;
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-item .course-info{
+            border: 1px solid #f00;
+            flex-grow: 1;
+            margin-bottom: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-item .course-link{
+            text-decoration: none;
+            /* background-color: #aaa; */
+            display: block;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            flex-grow: 1;
+        }
+        .card-item .course-link .pic{
+            margin: -10px -10px 10px -10px;
+        }
+        .card-item .course-link .pic img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        .card-item .course-link .course-class{
+            font-size: 13px;
+            color: #0aa;
+        }
+        /* .card-item .course-link .course-class span + span::before{ */
+        .card-item .course-link .course-class span:not(:first-child)::before{
+            content: '/';
+        }
+        .card-item .course-link .title{
+            color: #333;
+            font-size: 18px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+        .card-item .course-link .time{
+            font-size: 13px;
+            color: #888;
+        }
+        .card-item .course-link .sale{
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            border: 1px solid #fa0;
+            margin-bottom: 2ex;
+        }
+        .card-item .course-link .sale span:first-child{
+            background-color: #fa0;
+            color: #fff;
+            padding: 4px 6px;
+            margin-right: 0.3em;
+        }
+        .card-item .course-link .footer{
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .card-item .course-link .price{
+            color: #0aa;
+            font-size: 24px;
+        }
+        .card-item .course-link .price span{
+            font-size: 13px;
+        }
+        .card-item .course-link .view{}
+        .card-item .course-teacher{
+            display: flex;
+            align-items: center;
+        }
+        .card-item .course-teacher .pic{
+            width: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .card-item .course-teacher .pic img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        .card-item .course-teacher .text{}
+    </style>
+</head>
+<body>
+
+    <div class="card-list">
+        <div class="card-item">
+            <div class="course-info">
+                <a href="" class="course-link">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200/?random=10">
+                    </div>
+                    <div class="course-class">
+                        <span>主題課程</span>
+                        <span>實體課程</span>
+                        <span>線上直播課程</span>
+                    </div>
+                    <h3 class="title">
+                        Kubernetes (K8s) 新手實戰班
+                    </h3>
+                    <div class="time">
+                        第二十期 ∙ 2024/03/23 開課
+                    </div>
+                    <div class="footer">
+                        <div class="price">
+                            NT$20000
+                            <span>起</span>
+                        </div>
+                        <div class="view">
+                            333瀏覽
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="course-teacher">
+                <div class="pic">
+                    <img src="https://fakeimg.pl/100x100/200">
+                </div>
+                <div class="text">
+                    黃信溢 / 茶米老師
+                </div>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="course-info">
+                <a href="" class="course-link">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200/?random=10">
+                    </div>
+                    <div class="course-class">
+                        <span>主題課程</span>
+                        <span>實體課程</span>
+                        <span>線上直播課程</span>
+                    </div>
+                    <h3 class="title">
+                        Kubernetes (K8s) 新手實戰班Kubernetes (K8s) 新手實戰班Kubernetes (K8s) 新手實戰班Kubernetes (K8s) 新手實戰班
+                    </h3>
+                    <div class="time">
+                        第二十期 ∙ 2024/03/23 開課
+                    </div>
+                    <div class="sale">
+                        <span>早鳥優惠</span>
+                        <span>還剩1天</span>
+                    </div>
+                    <div class="footer">
+                        <div class="price">
+                            NT$20000
+                            <span>起</span>
+                        </div>
+                        <div class="view">
+                            333瀏覽
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="course-teacher">
+                <div class="pic">
+                    <img src="https://fakeimg.pl/100x100/200">
+                </div>
+                <div class="text">
+                    黃信溢 / 茶米老師
+                </div>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="course-info">
+                <a href="" class="course-link">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200/?random=10">
+                    </div>
+                    <div class="course-class">
+                        <span>主題課程</span>
+                        <span>實體課程</span>
+                        <span>線上直播課程</span>
+                    </div>
+                    <h3 class="title">
+                        Kubernetes (K8s) 新手實戰班
+                    </h3>
+                    <div class="time">
+                        第二十期 ∙ 2024/03/23 開課
+                    </div>
+                    <div class="footer">
+                        <div class="price">
+                            NT$20000
+                            <span>起</span>
+                        </div>
+                        <div class="view">
+                            333瀏覽
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="course-teacher">
+                <div class="pic">
+                    <img src="https://fakeimg.pl/100x100/200">
+                </div>
+                <div class="text">
+                    黃信溢 / 茶米老師
+                </div>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="course-info">
+                <a href="" class="course-link">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200/?random=10">
+                    </div>
+                    <div class="course-class">
+                        <span>主題課程</span>
+                        <span>實體課程</span>
+                        <span>線上直播課程</span>
+                    </div>
+                    <h3 class="title">
+                        Kubernetes (K8s) 新手實戰班
+                    </h3>
+                    <div class="time">
+                        第二十期 ∙ 2024/03/23 開課
+                    </div>
+                    <div class="sale">
+                        <span>早鳥優惠</span>
+                        <span>還剩1天</span>
+                    </div>
+                    <div class="footer">
+                        <div class="price">
+                            NT$20000
+                            <span>起</span>
+                        </div>
+                        <div class="view">
+                            333瀏覽
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="course-teacher">
+                <div class="pic">
+                    <img src="https://fakeimg.pl/100x100/200">
+                </div>
+                <div class="text">
+                    黃信溢 / 茶米老師
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #fa0;
+            position: relative;
+            animation: gogo 1s cubic-bezier(.65,-0.3,.93,-0.03) both;
+        }
+        @keyframes gogo {
+            0%{
+                left: 0;
+            }
+            100%{
+                left: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

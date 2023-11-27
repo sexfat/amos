@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #fa0;
+            font-size: 50px;
+            margin: 20px;
+            position: relative;
+        }
+
+        @keyframes gogo{
+              0%{
+                left: 0;
+              }
+            100%{
+                left: 150px;
+            }
+        }
+        @keyframes jj{
+              0%{
+                top: 0;
+              }
+            100%{
+                top: 150px;
+            }
+        }
+        .box1{
+            animation:  gogo 1s 0s linear infinite alternate,
+                        jj .2s 0s linear infinite alternate;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="box box1">A</div>
+
+</body>
+</html>
